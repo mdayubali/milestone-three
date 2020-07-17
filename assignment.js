@@ -12,7 +12,6 @@ console.log(finalMile);
 /******************
   woodCalculator
 *****************/
-
 function woodCalculator(chair, table, bedstead) {
     var countChair = chair * 1;
     var countTable = table * 3;
@@ -30,27 +29,26 @@ console.log(countTotalWood);
 function brickCalculator(floor) {
     const brickPerFeet = 1000;
     for ( var i = 0; i <= floor; i++){
-         if(i <= 10 ){
-        brick = brickPerFeet * 15;
+        if(i <= 10 ){
+        var brick = brickPerFeet * 15;
         }
-        if (i > 10 && i < 20) {
-            count = brickPerFeet * 15;
-            brick = count + (brickPerFeet *12);
+        else if (i > 10 && i < 20) {
+           var count = brickPerFeet * 15;
+            var brick = count + (brickPerFeet *12);
         }
-        if (i >= 20) {
-            count = (brickPerFeet * 15) + (brickPerFeet * 12);
-            brick = count + (brickPerFeet *10);
+        else if (i >= 20){
+            var count = (brickPerFeet * 15) + (brickPerFeet * 12);
+            var brick = count + (brickPerFeet *10);
         }
     }
     return brick;
 }
-var totalBrick = brickCalculator(14);
+var totalBrick = brickCalculator(11);
 console.log(totalBrick);
 
 /**********************************
     tinFriend
  **********************************/
-
 function tinyFriend(names) {
     var tiny = names[0];
     for (var i = 0; i < names.length; i++){
